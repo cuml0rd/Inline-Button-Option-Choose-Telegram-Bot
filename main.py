@@ -16,10 +16,8 @@ async def main_menu(message: types.Message):
     
 @dp.callback_query_handler()
 async def hello(call: types.CallbackQuery, state=FSMContext):
-    print(call.data)
     data = call.data.split('|')
     if 'type' in data:
-        print(data)
         number = data[1]
         current_mode = bool(int(data[2]))
         new_mode = not current_mode
