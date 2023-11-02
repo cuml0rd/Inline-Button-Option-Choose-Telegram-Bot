@@ -1,6 +1,4 @@
-from aiogram.types import (ReplyKeyboardMarkup,
-                           KeyboardButton,
-                           InlineKeyboardMarkup,
+from aiogram.types import (InlineKeyboardMarkup,
                            InlineKeyboardButton)
 
 def numbers(one_on: bool = False, two_on: bool = False, three_on: bool = False, four_on: bool = False):
